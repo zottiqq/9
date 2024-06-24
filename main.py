@@ -34,7 +34,21 @@ def delete_stud():
         return ({'message': 'Студент успешно удален'}), 201
 
 
+# Переменные #
 
+Num = str(input('Номер студента: \n'))
+
+def id_make():
+    print('\n')
+    id_ = int(input('ID студента: '))
+    return id_
+def params():
+    id_ = int(input('Номер нового студента: '))
+    name = str(input('Имя нового студента: '))
+    age = int(input('Возраст нового студента: '))
+    major = str(input('Специальность нового студента: '))
+    data_ = {'id': id_, 'name': name, 'age': age, 'major': major}
+    return data_
 
 
 # Выполнение #
